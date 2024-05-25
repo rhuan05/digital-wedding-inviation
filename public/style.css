@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Angella White';
+    src: url('../public/font/Angella\ White.otf');
+}
+
+.notFound{
+    display: none;
+}
+
+.container{
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+h1{
+    margin: auto;
+    margin-left: 0;
+    text-align: center;
+}
+
+h1 img{
+    margin: auto;
+    width: 100%;
+}
+
+body{
+    background: #fdf9ee;
+    font-family: "Marcellus", serif;
+}
+
+header{
+    height: 90vh;
+    width: 100vw;
+}
+
+header .imageBanner{
+    height: 100%;
+    width: 100%;
+}
+
+.imageBanner img{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width: 100vw;
+    margin-top: 10vh;
+}
+
+main .lillyImage{
+    width: 100vw;
+}
+
+.lillyImage img{
+    width: 40%;
+}
+
+main .texts{
+    font-family: "Marcellus", serif;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.texts .paragraths{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 80%;
+}
+
+footer{
+    width: 100vw;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+footer .icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icons .icon_image{
+    font-size: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.icon_image img{
+    width: 30px;
+}
+
+@media(min-width: 500px){
+    .container{
+        display: none;
+    }
+    
+    .notFound{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 2vw;
+    }
+}
