@@ -43,11 +43,14 @@ header{
 header .imageBanner{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imageBanner img{
-    height: 100%;
     width: 100%;
+    margin-top: 10vh;
 }
 
 main{
@@ -60,19 +63,20 @@ main .lillyImage{
 }
 
 .lillyImage img{
-    width: 40%;
+    width: 50%;
+    margin-top: 10vh;
 }
 
 main .texts{
     font-family: "Marcellus", serif;
-    font-size: 12px;
+    font-size: 3.5vw;
     text-align: center;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .texts .paragraths{
@@ -83,7 +87,7 @@ main .texts{
     display: flex;
     flex-direction: column;
     gap: 26px;
-    width: 80%;
+    width: 90%;
 }
 
 footer{
@@ -94,14 +98,31 @@ footer{
 
 footer .icons{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
 }
 
 .icons .icon_image{
-    font-size: 8px;
+    font-size: 3.5vw;
     text-align: center;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 36px;
+}
+
+.divIcons{
+    text-align: center;
+}
+
+.icon_image p{
+    width: 80px;
+    margin-left: -20px;
+}
+
+#presentIcon{
+    width: 35px; 
 }
 
 a{
@@ -110,7 +131,7 @@ a{
 }
 
 .icon_image img{
-    width: 30px;
+    width: 100%;
 }
 
 @media(min-width: 500px){
