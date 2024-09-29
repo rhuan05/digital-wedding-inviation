@@ -7,6 +7,12 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
 
+// Sessions
+app.use(session({
+    secret: 'secretexample',
+    cookie: { maxAge: 100000 }
+}));
+
 //
 app.use(express.static(path.join(__dirname, '/public')));
 

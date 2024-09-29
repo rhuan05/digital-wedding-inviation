@@ -11,16 +11,13 @@
     <div class="container">
 
         <header>
-            <% if(usuario.cadastroInicial) { %>
-                <h1>Olá, <%= usuario.nomeEsposa %></h1>
-            <% } else { %>
-                <h1>Paínel de admin</h1>
-            <% } %>
+            <h1>Parabéns pelo casamento!</h1>
+            <p>Para que você tenha uma experiência 100% exclusiva, vamos cadastrar os seus dados iniciais nos campos abaixo: </p>
         </header>
 
         <main>
             <div class="dadosIniciais">
-                <form action="/cadastro-incial" method="post">
+                <form action="/dados-iniciais" method="post">
                     <label for="nomeEsposa">Nome da esposa:</label>
                     <input type="text" name="nomeEsposa" id="nomeEsposa" placeholder="Apenas o primeiro nome..." required />
                     <label for="nomeMarido">Nome do marido:</label>

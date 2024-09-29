@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina e Rhuan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/S-R.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+
+        <main>
+            <div class="dadosIniciais">
+                <form action="/cadastro" method="post">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuário..." required />
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha..." required />
+                    <button type="submit">Iniciar</button>
+                </form>
+            </div>
+
+            <% if(mensagem.length > 0) { %>
+                <p><%= mensagem %></p>
+            <% } %>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+    <script src="cadastro/cadastro.js"></script>
+</body>
+</html>
