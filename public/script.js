@@ -49,4 +49,4 @@ setInterval(() => {
     segundos--;
     segundos__item.innerHTML = segundos;
     return;
-}, 1)
+}, 1000)
