@@ -5,9 +5,9 @@ exports.renderCadastro = (req, res)=>{
 };
 
 exports.cadastrarUsuario = async (req, res)=>{
-    const { usuario, senha } = req.body;
+    const { usuario, senha, nomeEsposa, nomeMarido, dataEvento } = req.body;
 
-    if(!usuario || !senha)
+    if(!usuario || !senha || !nomeEsposa || !nomeMarido || !dataEvento)    
         return res.status(400).render('cadastro', { mensagem: ['Preencha todos os campos para finalizar o cadastro!'] });
 
     const cadastroModelDB = await UsuarioModel.findOne({ usuario, senha });
@@ -18,7 +18,10 @@ exports.cadastrarUsuario = async (req, res)=>{
     const usuarioDB = new UsuarioModel({
         usuario,
         senha,
-        cadastroInicial: false,
+        nomeEsposa,
+        nomeMarido,
+        subdominio: `${nomeEsposa}-${nomeMarido}`,
+        dataEvento
     });
 
     try{

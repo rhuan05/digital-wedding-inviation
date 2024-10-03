@@ -6,8 +6,6 @@ var segundos = 59;
 var minutos = 59;
 var horas = 23;
 
-console.log(new Date());
-
 var dias__item = document.querySelector('#days');
 var horas__item = document.querySelector('#hours');
 var minutos__item = document.querySelector('#minutes');
